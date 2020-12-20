@@ -11,10 +11,10 @@
 		
 		<item>
 			<title>CKA 시험 후기</title>
-			<link>https://augustkang.com/posts/cka-experience/</link>
+			<link>https://augustkang.com/posts/review/cka-experience/</link>
 			<pubDate>Tue, 27 Oct 2020 00:10:00 +0900</pubDate>
 			
-			<guid>https://augustkang.com/posts/cka-experience/</guid>
+			<guid>https://augustkang.com/posts/review/cka-experience/</guid>
 			<description>Certified Kubernetes administrator(CKA, 2020년 9월 개정) 시험을 준비하시는 분들께 도움이 되길 바라며.. (2번째 응시(free retake)끝에 턱걸이로 겨우 취득한) CKA 경험을 공유</description>
 			<content type="html"><![CDATA[<figure>
     <img src="/images/cka.png"/> 
@@ -77,10 +77,10 @@
 		
 		<item>
 			<title>2020 Books I Read</title>
-			<link>https://augustkang.com/posts/2020-books-i-read/</link>
+			<link>https://augustkang.com/posts/book/2020-books-i-read/</link>
 			<pubDate>Sat, 04 Jan 2020 09:52:00 +0900</pubDate>
 			
-			<guid>https://augustkang.com/posts/2020-books-i-read/</guid>
+			<guid>https://augustkang.com/posts/book/2020-books-i-read/</guid>
 			<description>2020년에 읽은 책들을 나열하는 포스트(업데이트중) 2020-01-01 고래(천명관) 2020-01-04 페인트(이희영) 2020-03-31 가만한 나날(김세희) 2020-04-01 일의 기쁨과 슬픔(장류진) 2020-04-03 해가 지</description>
 			<content type="html"><![CDATA[<h1 id="2020년에-읽은-책들을-나열하는-포스트업데이트중">2020년에 읽은 책들을 나열하는 포스트(업데이트중)</h1>
 <ul>
@@ -142,10 +142,10 @@
 		
 		<item>
 			<title>2019 Books I Read</title>
-			<link>https://augustkang.com/posts/2019-books-i-read/</link>
+			<link>https://augustkang.com/posts/book/2019-books-i-read/</link>
 			<pubDate>Sun, 09 Jun 2019 17:57:32 +0900</pubDate>
 			
-			<guid>https://augustkang.com/posts/2019-books-i-read/</guid>
+			<guid>https://augustkang.com/posts/book/2019-books-i-read/</guid>
 			<description>2019년에 읽은 책들을 나열하는 포스트 아몬드(손원평) 사람의 아들(이문열) 지방 대사 켜는 스위치온 다이어트(박용우) 여행의 이유(김영하) 나는 왜 정치</description>
 			<content type="html"><![CDATA[<h1 id="2019년에-읽은-책들을-나열하는-포스트">2019년에 읽은 책들을 나열하는 포스트</h1>
 <ul>
