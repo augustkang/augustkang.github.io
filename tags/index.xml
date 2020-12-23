@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 27 Oct 2020 00:10:00 +0900</lastBuildDate><atom:link href="https://augustkang.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Dec 2020 13:25:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://augustkang.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>job</title>
+      <link>https://augustkang.com/tags/job/</link>
+      <pubDate>Wed, 23 Dec 2020 13:25:00 +0900</pubDate>
+      
+      <guid>https://augustkang.com/tags/job/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://augustkang.com/tags/review/</link>
+      <pubDate>Wed, 23 Dec 2020 13:25:00 +0900</pubDate>
+      
+      <guid>https://augustkang.com/tags/review/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>certification</title>
       <link>https://augustkang.com/tags/certification/</link>

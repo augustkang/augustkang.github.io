@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>review on augustkang</title>
+    <link>https://augustkang.com/tags/review/</link>
+    <description>Recent content in review on augustkang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 23 Dec 2020 13:25:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://augustkang.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>첫 이직 후기</title>
+      <link>https://augustkang.com/posts/review/move-on-from-first-job/</link>
+      <pubDate>Wed, 23 Dec 2020 13:25:00 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/review/move-on-from-first-job/</guid>
+      <description>2018년 5월 17일에 입사하여 2년 8개월간 시스템 엔지니어로 근무한 회사를 2020년 12월 11일 부로 퇴사하였다. 현재는 다른 기업으로 이직(시스템 엔</description>
+    </item>
+    
+  </channel>
+</rss>
