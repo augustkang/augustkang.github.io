@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 04 Jan 2021 21:37:00 +0900</lastBuildDate><atom:link href="https://augustkang.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 00:09:00 +0900</lastBuildDate><atom:link href="https://augustkang.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>너라는 생활(김혜진)</title>
+      <link>https://augustkang.com/posts/book/%EB%84%88%EB%9D%BC%EB%8A%94%EC%83%9D%ED%99%9C/</link>
+      <pubDate>Fri, 08 Jan 2021 00:09:00 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/book/%EB%84%88%EB%9D%BC%EB%8A%94%EC%83%9D%ED%99%9C/</guid>
+      <description>9번의 일을 쓴 작가, 김혜진 작가의 소설집 너라는 생활을 읽었다. 줄거리 소감</description>
+    </item>
+    
     <item>
       <title>페스트(알베르 카뮈)</title>
       <link>https://augustkang.com/posts/book/pest/</link>
@@ -23,7 +32,7 @@
       <pubDate>Sat, 02 Jan 2021 12:10:00 +0900</pubDate>
       
       <guid>https://augustkang.com/posts/book/2021-books-i-read/</guid>
-      <description>2021년에 읽은 책들(업데이트중) 2020-01-04 페스트(알베르 카뮈)</description>
+      <description>2021년에 읽은 책들(업데이트중) 2020-01-04 페스트(알베르 카뮈) 2020-01-08 너라는 생활(김혜진)</description>
     </item>
     
     <item>
@@ -88,15 +97,6 @@
       <guid>https://augustkang.com/about/</guid>
       <description>Welcome to my blog.
 I am currently working as System engineer.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>https://augustkang.com/posts/first-post/</link>
-      <pubDate>Sun, 02 Jun 2019 17:36:40 +0900</pubDate>
-      
-      <guid>https://augustkang.com/posts/first-post/</guid>
-      <description>I just created my first blog :D</description>
     </item>
     
   </channel>

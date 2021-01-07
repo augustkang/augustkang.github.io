@@ -6,8 +6,21 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 04 Jan 2021 21:37:00 +0900</lastBuildDate>
+		<lastBuildDate>Fri, 08 Jan 2021 00:09:00 +0900</lastBuildDate>
 		<atom:link href="https://augustkang.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>너라는 생활(김혜진)</title>
+			<link>https://augustkang.com/posts/book/%EB%84%88%EB%9D%BC%EB%8A%94%EC%83%9D%ED%99%9C/</link>
+			<pubDate>Fri, 08 Jan 2021 00:09:00 +0900</pubDate>
+			
+			<guid>https://augustkang.com/posts/book/%EB%84%88%EB%9D%BC%EB%8A%94%EC%83%9D%ED%99%9C/</guid>
+			<description>9번의 일을 쓴 작가, 김혜진 작가의 소설집 너라는 생활을 읽었다. 줄거리 소감</description>
+			<content type="html"><![CDATA[<p>9번의 일을 쓴 작가, 김혜진 작가의 소설집 너라는 생활을 읽었다.</p>
+<h3 id="줄거리">줄거리</h3>
+<h3 id="소감">소감</h3>
+]]></content>
+		</item>
 		
 		<item>
 			<title>페스트(알베르 카뮈)</title>
@@ -39,10 +52,11 @@
 			<pubDate>Sat, 02 Jan 2021 12:10:00 +0900</pubDate>
 			
 			<guid>https://augustkang.com/posts/book/2021-books-i-read/</guid>
-			<description>2021년에 읽은 책들(업데이트중) 2020-01-04 페스트(알베르 카뮈)</description>
+			<description>2021년에 읽은 책들(업데이트중) 2020-01-04 페스트(알베르 카뮈) 2020-01-08 너라는 생활(김혜진)</description>
 			<content type="html"><![CDATA[<h1 id="2021년에-읽은-책들업데이트중">2021년에 읽은 책들(업데이트중)</h1>
 <ul>
 <li>2020-01-04 <a href="http://augustkang.com/posts/book/pest/">페스트(알베르 카뮈)</a></li>
+<li>2020-01-08 <a href="http://augustkang.com/posts/book/%EB%84%88%EB%9D%BC%EB%8A%94%EC%83%9D%ED%99%9C.md">너라는 생활(김혜진)</a></li>
 </ul>
 ]]></content>
 		</item>
