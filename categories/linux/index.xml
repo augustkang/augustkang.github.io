@@ -27,21 +27,21 @@
     </item>
     
     <item>
+      <title>top command</title>
+      <link>https://augustkang.com/posts/linux/top-command/</link>
+      <pubDate>Sun, 17 Jan 2021 01:05:00 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/top-command/</guid>
+      <description>top command에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
+    </item>
+    
+    <item>
       <title>linux system info</title>
       <link>https://augustkang.com/posts/linux/linux-system-info/</link>
       <pubDate>Sun, 17 Jan 2021 00:55:40 +0900</pubDate>
       
       <guid>https://augustkang.com/posts/linux/linux-system-info/</guid>
       <description>Linux 시스템 정보 확인 방법에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본</description>
-    </item>
-    
-    <item>
-      <title>top command</title>
-      <link>https://augustkang.com/posts/linux/top-command/</link>
-      <pubDate>Fri, 15 Jan 2021 01:05:00 +0900</pubDate>
-      
-      <guid>https://augustkang.com/posts/linux/top-command/</guid>
-      <description>top command에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
     </item>
     
   </channel>
