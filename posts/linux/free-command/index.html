@@ -11,7 +11,7 @@
 <meta itemprop="description" content="메모리 사용 정보를 보여주는 free 명령어와 /proc/meminfo 에 대해 &ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&rdquo; 책에서 배운 내용, &ldquo;">
 <meta itemprop="datePublished" content="2019-07-17T16:12:40+09:00" />
 <meta itemprop="dateModified" content="2019-07-17T16:12:40+09:00" />
-<meta itemprop="wordCount" content="1929">
+<meta itemprop="wordCount" content="2089">
 
 
 
@@ -87,6 +87,7 @@ Swap:         <span class="m">24576</span>         <span class="m">214</span>   
 <span class="c1"># 출력 데이터 단위에 따라 옵션이 다르다.</span>
 <span class="c1"># -b: byte 단위, -k: KB 단위, -m: MB 단위, -G: GB 단위</span>
 </code></pre></div><p>total : 전체, used : 사용중, free : 사용 안하고 있는 남는 용량</p>
+<p>total 계산방법 -&gt; total = free + used + buff/cache</p>
 <p>buff/cache : buffers와 cache 영역에서 차지하는 용량을 보여줌.</p>
 <p>메모리에 있는 내용이긴 하지만, 원본이 원래는 디스크에 있고 그 디스크 내용을 메모리에 캐싱 목적으로 올려놓은 양을 뜻한다.</p>
 <p>디스크에서 읽어온 데이터를 메모리에 캐시한 양. 디스크에서 미리 읽어다 올려놓고 유지중인 메모리의 양</p>
@@ -94,6 +95,9 @@ Swap:         <span class="m">24576</span>         <span class="m">214</span>   
 <p>buff/cache 일부와 free를 합한거라고 보면 된다고 한다. 절대 free랑 헷갈리면 안된다.</p>
 <p>buff/cache는 성능 이익을 보기 위해 원래 디스크에 있는 내용을 메모리에 읽어 놓았을 뿐 해제해버려도 문제가 없는 부분이라고 한다.</p>
 <p>Swap : swap 영역에 대한 내용. 전체, 사용중인 용량, 남는 용량</p>
+<p>Swap 영역은 메모리의 내용을 저장해 둘 수 있는 Disk 공간의 양을 뜻한다. 결국 i/o latency가 메모리보다 높은 디스크 공간을 뜻한다.</p>
+<p>메모리가 꽉 찼을 정도로 부족할 때 현재 메모리에 있는 내용을 swap에 임시로 옮겨두고 사용할 메모리 공간을 확보한다.</p>
+<p>kswapd 라는 커널 태스크가 워터마크라는 지표를 기반으로 메모리에 있는 내용을 swap 영역으로 옮긴다.</p>
 <h3 id="buffers와-cached-영역">buffers와 cached 영역<a href="#buffers와-cached-영역" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <ul>
 <li>buffers 영역은 buffer cache 영역을 뜻함.</li>
@@ -205,7 +209,7 @@ SUnreclaim:        <span class="m">71320</span> kB
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1929 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2089 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-07-17 16:12 &#43;0900</p>
 			</footer>
 		</article>
