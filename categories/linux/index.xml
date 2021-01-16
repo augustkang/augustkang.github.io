@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on augustkang</title>
+    <link>https://augustkang.com/categories/linux/</link>
+    <description>Recent content in linux on augustkang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 17 Jul 2019 16:12:40 +0900</lastBuildDate><atom:link href="https://augustkang.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>free command, /proc/meminfo</title>
+      <link>https://augustkang.com/posts/linux/free-command/</link>
+      <pubDate>Wed, 17 Jul 2019 16:12:40 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/free-command/</guid>
+      <description>메모리 사용 정보를 보여주는 free 명령어와 /proc/meminfo 에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;</description>
+    </item>
+    
+    <item>
+      <title>Load average</title>
+      <link>https://augustkang.com/posts/linux/load-average-calculation/</link>
+      <pubDate>Sat, 13 Jul 2019 21:38:58 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/load-average-calculation/</guid>
+      <description>Load average에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
+    </item>
+    
+    <item>
+      <title>top command</title>
+      <link>https://augustkang.com/posts/linux/top-command/</link>
+      <pubDate>Thu, 11 Jul 2019 01:55:00 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/top-command/</guid>
+      <description>top command에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
+    </item>
+    
+    <item>
+      <title>linux system info</title>
+      <link>https://augustkang.com/posts/linux/linux-system-info/</link>
+      <pubDate>Sat, 22 Jun 2019 00:23:40 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/linux-system-info/</guid>
+      <description>Linux 시스템 정보 확인 방법에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -72,31 +72,30 @@
     </item>
     
     <item>
-      <title>2019 Books I Read</title>
-      <link>https://augustkang.com/posts/book/2019-books-i-read/</link>
-      <pubDate>Sun, 09 Jun 2019 17:57:32 +0900</pubDate>
+      <title>free command, /proc/meminfo</title>
+      <link>https://augustkang.com/posts/linux/free-command/</link>
+      <pubDate>Wed, 17 Jul 2019 16:12:40 +0900</pubDate>
       
-      <guid>https://augustkang.com/posts/book/2019-books-i-read/</guid>
-      <description>2019년에 읽은 책들을 나열하는 포스트 아몬드(손원평) 사람의 아들(이문열) 지방 대사 켜는 스위치온 다이어트(박용우) 여행의 이유(김영하) 나는 왜 정치</description>
+      <guid>https://augustkang.com/posts/linux/free-command/</guid>
+      <description>메모리 사용 정보를 보여주는 free 명령어와 /proc/meminfo 에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;</description>
     </item>
     
     <item>
-      <title>How to Git Pull With Submodules</title>
-      <link>https://augustkang.com/posts/how-to-git-pull-with-submodules/</link>
-      <pubDate>Mon, 03 Jun 2019 21:23:32 +0900</pubDate>
+      <title>Load average</title>
+      <link>https://augustkang.com/posts/linux/load-average-calculation/</link>
+      <pubDate>Sat, 13 Jul 2019 21:38:58 +0900</pubDate>
       
-      <guid>https://augustkang.com/posts/how-to-git-pull-with-submodules/</guid>
-      <description>집 데탑에만 블로그 소스가 있는지라 회사 컴에서도 작성할 수 있게끔 내 블로그 repo를 clone하였다. 근데 그냥 clone을 하니 submodule로 등록</description>
+      <guid>https://augustkang.com/posts/linux/load-average-calculation/</guid>
+      <description>Load average에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://augustkang.com/about/</link>
-      <pubDate>Sun, 02 Jun 2019 17:40:10 +0900</pubDate>
+      <title>top command</title>
+      <link>https://augustkang.com/posts/linux/top-command/</link>
+      <pubDate>Thu, 11 Jul 2019 01:55:00 +0900</pubDate>
       
-      <guid>https://augustkang.com/about/</guid>
-      <description>Welcome to my blog.
-I am currently working as System engineer.</description>
+      <guid>https://augustkang.com/posts/linux/top-command/</guid>
+      <description>top command에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
     </item>
     
   </channel>
