@@ -4,7 +4,42 @@
   
   <url>
     <loc>https://augustkang.com/</loc>
-    <lastmod>2021-01-08T21:37:00+09:00</lastmod>
+    <lastmod>2021-01-17T01:12:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://augustkang.com/categories/</loc>
+    <lastmod>2021-01-17T01:12:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://augustkang.com/posts/linux/free-command/</loc>
+    <lastmod>2021-01-17T01:12:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://augustkang.com/categories/linux/</loc>
+    <lastmod>2021-01-17T01:12:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://augustkang.com/posts/</loc>
+    <lastmod>2021-01-17T01:12:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://augustkang.com/posts/linux/load-average-calculation/</loc>
+    <lastmod>2021-01-17T01:06:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://augustkang.com/posts/linux/linux-system-info/</loc>
+    <lastmod>2021-01-17T00:55:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://augustkang.com/posts/linux/top-command/</loc>
+    <lastmod>2021-01-15T01:05:00+09:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +49,6 @@
   
   <url>
     <loc>https://augustkang.com/categories/book/</loc>
-    <lastmod>2021-01-08T21:37:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://augustkang.com/categories/</loc>
-    <lastmod>2021-01-08T21:37:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://augustkang.com/posts/</loc>
     <lastmod>2021-01-08T21:37:00+09:00</lastmod>
   </url>
   
@@ -110,31 +135,6 @@
   <url>
     <loc>https://augustkang.com/posts/book/2020-books-i-read/</loc>
     <lastmod>2020-01-04T09:52:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://augustkang.com/posts/linux/free-command/</loc>
-    <lastmod>2019-07-17T16:12:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://augustkang.com/categories/linux/</loc>
-    <lastmod>2019-07-17T16:12:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://augustkang.com/posts/linux/load-average-calculation/</loc>
-    <lastmod>2019-07-13T21:38:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://augustkang.com/posts/linux/top-command/</loc>
-    <lastmod>2019-07-11T01:55:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://augustkang.com/posts/linux/linux-system-info/</loc>
-    <lastmod>2019-06-22T00:23:40+09:00</lastmod>
   </url>
   
   <url>

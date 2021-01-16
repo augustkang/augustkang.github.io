@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 08 Jan 2021 21:37:00 +0900</lastBuildDate><atom:link href="https://augustkang.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jan 2021 01:12:40 +0900</lastBuildDate><atom:link href="https://augustkang.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>free command, /proc/meminfo</title>
+      <link>https://augustkang.com/posts/linux/free-command/</link>
+      <pubDate>Sun, 17 Jan 2021 01:12:40 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/free-command/</guid>
+      <description>메모리 사용 정보를 보여주는 free 명령어와 /proc/meminfo 에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;</description>
+    </item>
+    
+    <item>
+      <title>Load average</title>
+      <link>https://augustkang.com/posts/linux/load-average-calculation/</link>
+      <pubDate>Sun, 17 Jan 2021 01:06:58 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/load-average-calculation/</guid>
+      <description>Load average에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
+    </item>
+    
+    <item>
+      <title>linux system info</title>
+      <link>https://augustkang.com/posts/linux/linux-system-info/</link>
+      <pubDate>Sun, 17 Jan 2021 00:55:40 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/linux-system-info/</guid>
+      <description>Linux 시스템 정보 확인 방법에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본</description>
+    </item>
+    
+    <item>
+      <title>top command</title>
+      <link>https://augustkang.com/posts/linux/top-command/</link>
+      <pubDate>Fri, 15 Jan 2021 01:05:00 +0900</pubDate>
+      
+      <guid>https://augustkang.com/posts/linux/top-command/</guid>
+      <description>top command에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
+    </item>
+    
     <item>
       <title>너라는 생활(김혜진)</title>
       <link>https://augustkang.com/posts/book/%EB%84%88%EB%9D%BC%EB%8A%94%EC%83%9D%ED%99%9C/</link>
@@ -60,42 +96,6 @@
       
       <guid>https://augustkang.com/posts/review/cka-experience/</guid>
       <description>Certified Kubernetes administrator(CKA, 2020년 9월 개정) 시험을 준비하시는 분들께 도움이 되길 바라며.. (2번째 응시(free retake)끝에 턱걸이로 겨우 취득한) CKA 경험을 공유</description>
-    </item>
-    
-    <item>
-      <title>2020 Books I Read</title>
-      <link>https://augustkang.com/posts/book/2020-books-i-read/</link>
-      <pubDate>Sat, 04 Jan 2020 09:52:00 +0900</pubDate>
-      
-      <guid>https://augustkang.com/posts/book/2020-books-i-read/</guid>
-      <description>2020년에는 52권의 책을 읽었다. 주로 출,퇴근 시간에만 지하철에서 책을 읽는데(정말 재밌는 책 아니면 집에서는 안봄), 하루 이틀 시간이 쌓이니까 읽은 권수</description>
-    </item>
-    
-    <item>
-      <title>free command, /proc/meminfo</title>
-      <link>https://augustkang.com/posts/linux/free-command/</link>
-      <pubDate>Wed, 17 Jul 2019 16:12:40 +0900</pubDate>
-      
-      <guid>https://augustkang.com/posts/linux/free-command/</guid>
-      <description>메모리 사용 정보를 보여주는 free 명령어와 /proc/meminfo 에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;</description>
-    </item>
-    
-    <item>
-      <title>Load average</title>
-      <link>https://augustkang.com/posts/linux/load-average-calculation/</link>
-      <pubDate>Sat, 13 Jul 2019 21:38:58 +0900</pubDate>
-      
-      <guid>https://augustkang.com/posts/linux/load-average-calculation/</guid>
-      <description>Load average에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
-    </item>
-    
-    <item>
-      <title>top command</title>
-      <link>https://augustkang.com/posts/linux/top-command/</link>
-      <pubDate>Thu, 11 Jul 2019 01:55:00 +0900</pubDate>
-      
-      <guid>https://augustkang.com/posts/linux/top-command/</guid>
-      <description>top command에 대해 &amp;ldquo;DevOps와 SE를 위한 리눅스 커널 이야기&amp;rdquo; 책에서 배운 내용, &amp;ldquo;리얼 리눅스 SW 기본반&amp;</description>
     </item>
     
   </channel>
