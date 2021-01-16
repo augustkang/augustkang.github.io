@@ -7,24 +7,24 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
-<meta itemprop="name" content="First Post">
-<meta itemprop="description" content="This is an first post of my blog.">
-<meta itemprop="datePublished" content="2019-06-02T17:36:40+09:00" />
-<meta itemprop="dateModified" content="2019-06-02T17:36:40+09:00" />
-<meta itemprop="wordCount" content="7">
+<meta itemprop="name" content="How to Git Pull With Submodules">
+<meta itemprop="description" content="How to git pull with submodules of repo.">
+<meta itemprop="datePublished" content="2019-06-03T21:23:32+09:00" />
+<meta itemprop="dateModified" content="2019-06-03T21:23:32+09:00" />
+<meta itemprop="wordCount" content="156">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta property="og:title" content="First Post" />
-<meta property="og:description" content="This is an first post of my blog." />
+<meta itemprop="keywords" content="git,submodule," />
+<meta property="og:title" content="How to Git Pull With Submodules" />
+<meta property="og:description" content="How to git pull with submodules of repo." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://augustkang.com/posts/first-post/" />
-<meta property="article:published_time" content="2019-06-02T17:36:40+09:00" />
-<meta property="article:modified_time" content="2019-06-02T17:36:40+09:00" />
+<meta property="og:url" content="https://augustkang.com/posts/git/how-to-git-pull-with-submodules/" />
+<meta property="article:published_time" content="2019-06-03T21:23:32+09:00" />
+<meta property="article:modified_time" content="2019-06-03T21:23:32+09:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="First Post"/>
-<meta name="twitter:description" content="This is an first post of my blog."/>
+<meta name="twitter:title" content="How to Git Pull With Submodules"/>
+<meta name="twitter:description" content="How to git pull with submodules of repo."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,7 +33,7 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
 	<link rel="shortcut icon" href="/favicon.ico">
 
-	<title>First Post</title>
+	<title>How to Git Pull With Submodules</title>
 	<link rel="stylesheet" href="https://augustkang.com/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
 	
 </head>
@@ -73,22 +73,32 @@
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>Jun 2, 2019</span></div>
-				<h1>First Post</h1>
+				<div class="post-meta"><span>Jun 3, 2019</span></div>
+				<h1>How to Git Pull With Submodules</h1>
 			</header>
 			<div class="content">
-				<p>I just created my first blog :D</p>
+				<p>집 데탑에만 블로그 소스가 있는지라 회사 컴에서도 작성할 수 있게끔 내 블로그 repo를 clone하였다.
+근데 그냥 clone을 하니 submodule로 등록한 repo는 같이 clone이 안되더라.
+구글링을 좀 해본 결과 <a href="http://openmetric.org/til/programming/git-pull-with-submodule/">링크</a>와 같이</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git submodule update --init --recursive
+</code></pre></div><p>clone 이후에 해당 repo의 root에서 위 명령어를 통해 submodule을 업데이트 해주니 해결이 되었다.</p>
 
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>7 Words</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-06-02 17:36 &#43;0900</p>
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://augustkang.com/tags/git">git</a></span><span class="tag"><a href="https://augustkang.com/tags/submodule">submodule</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>156 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-06-03 21:23 &#43;0900</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://augustkang.com/posts/git/how-to-git-pull-with-submodules/">
-				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>How to Git Pull With Submodules</span>
+			<a class="next-post" href="https://augustkang.com/posts/book/2019-books-i-read/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>2019 Books I Read</span>
+			</a>
+			<a class="prev-post" href="https://augustkang.com/posts/first-post/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>First Post</span>
 			</a>
 		</div>
 		<div id="comments" class="thin">
