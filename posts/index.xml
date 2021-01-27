@@ -25,18 +25,39 @@ Mem:           <span class="m">8047</span>        <span class="m">6161</span>   
 Swap:         <span class="m">24576</span>         <span class="m">214</span>       <span class="m">24361</span>
 <span class="c1"># 출력 데이터 단위에 따라 옵션이 다르다.</span>
 <span class="c1"># -b: byte 단위, -k: KB 단위, -m: MB 단위, -G: GB 단위</span>
-</code></pre></div><p>total : 전체, used : 사용중, free : 사용 안하고 있는 남는 용량</p>
-<p>total 계산방법 -&gt; total = free + used + buff/cache</p>
-<p>buff/cache : buffers와 cache 영역에서 차지하는 용량을 보여줌.</p>
-<p>메모리에 있는 내용이긴 하지만, 원본이 원래는 디스크에 있고 그 디스크 내용을 메모리에 캐싱 목적으로 올려놓은 양을 뜻한다.</p>
-<p>디스크에서 읽어온 데이터를 메모리에 캐시한 양. 디스크에서 미리 읽어다 올려놓고 유지중인 메모리의 양</p>
-<p>available : 어떤 프로세스가 지금 처음 시작되면 사용 가능한 최대 메모리의 양을 뜻한다.</p>
-<p>buff/cache 일부와 free를 합한거라고 보면 된다고 한다. 절대 free랑 헷갈리면 안된다.</p>
-<p>buff/cache는 성능 이익을 보기 위해 원래 디스크에 있는 내용을 메모리에 읽어 놓았을 뿐 해제해버려도 문제가 없는 부분이라고 한다.</p>
+</code></pre></div><ul>
+<li>
+<p>total : 전체, used : 사용중, free : 사용 안하고 있는 남는 용량</p>
+</li>
+<li>
+<p>buff/cache : buffers와 cached 영역에서 차지하는 용량.</p>
+</li>
+</ul>
+<p>부끄럽지만 used, free는 잘 알았지만(그냥 읽으면 딱 알 수 있는 부분이니까) buff/cache는 대충 캐시 영역이겠거니~ 하고 정확히는 모르고 있었다.</p>
+<p>대충 캐시해놓은 부분이라고만 넘어갔었는데 실제로 buffers, cached 영역은 뭘까?</p>
+<p>buffers/cached 영역은 원본이 원래는 디스크에 있으나 성능 이점을 위해 그 디스크 내용을 메모리에 캐싱 목적으로 올려놓은 부분이라고 한다.</p>
+<p>그럼 대체 디스크에 수많은 데이터들 중에 어떤걸 캐싱 목적으로 메모리에 올려놓는데??????</p>
+<p><code>cat /proc/meminfo</code> 로 buffers, cached를 나눠서 보면</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">august@august-PC~$ cat /proc/meminfo <span class="p">|</span> head -5
+MemTotal:        <span class="m">2035676</span> kB
+MemFree:          <span class="m">784432</span> kB
+MemAvailable:    <span class="m">1890044</span> kB
+Buffers:            <span class="m">6596</span> kB
+Cached:          <span class="m">1021344</span> kB
+</code></pre></div><p>Buffers : 좀 더 작음. Why? 디스크에 있던 File의 메타데이터(inode)를 읽어놓는 영역이다. 메타데이터는 파일의 access time, owner 등등 정보를 의미한다. 크기가 작다.</p>
+<p>Cached : 크기가 buffers에 비해 훨씬 크다. Why? 디스크에 있던 File의 실제 데이터 내용(data block)을 페이지 단위로 읽어놓는 영역이다.</p>
+<p>일단 buffers, cached 이 영역들은 기본적으로 원본이 이미 디스크에 있는 내용이다.</p>
+<p>성능 이점을 위해 메모리에 읽어놓은 형태이기 때문에 해제해버려도 프로그램 구동에 치명적인 위협은 되지 않는다.
+(write 생긴 내용은 디스크에 flush만 했다면)</p>
+<ul>
+<li>total의 계산방식 -&gt; total = free + used + buff/cache</li>
+</ul>
+<p>available : 어떤 프로세스가 지금 처음 시작되면 사용 가능한 최대 메모리의 양(영끌)을 뜻한다.</p>
+<p>buff/cache 일부와 free를 합한거라고 보면 된다고 한다. free랑 헷갈리면 안된다.</p>
 <p>Swap : swap 영역에 대한 내용. 전체, 사용중인 용량, 남는 용량</p>
-<p>Swap 영역은 메모리의 내용을 저장해 둘 수 있는 Disk 공간의 양을 뜻한다. 결국 i/o latency가 메모리보다 높은 디스크 공간을 뜻한다.</p>
-<p>메모리가 꽉 찼을 정도로 부족할 때 현재 메모리에 있는 내용을 swap에 임시로 옮겨두고 사용할 메모리 공간을 확보한다.</p>
-<p>kswapd 라는 커널 태스크가 워터마크라는 지표를 기반으로 메모리에 있는 내용을 swap 영역으로 옮긴다.</p>
+<p>Swap 영역은 메모리에 있는 내용을 임시로 저장해 둘 수 있는 Disk 공간의 양을 뜻한다. 결국 i/o latency가 메모리보다 높은 디스크 공간을 뜻한다.</p>
+<p>메모리가 꽉 찼을 정도로 부족할 때 현재 메모리에 있는 내용을 swap(디스크)에 임시로 옮겨두고 사용할 메모리(RAM) 공간을 확보한다.</p>
+<p>참고 : kswapd 라는 커널 태스크는 워터마크라는 지표를 기반으로 메모리에 있는 내용을 swap 영역으로 옮긴다.</p>
 <h3 id="buffers와-cached-영역">buffers와 cached 영역</h3>
 <ul>
 <li>buffers 영역은 buffer cache 영역을 뜻함.</li>
