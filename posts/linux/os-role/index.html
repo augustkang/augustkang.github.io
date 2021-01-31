@@ -116,18 +116,26 @@ exception이 발생할 수 있다.</p>
 <li>네트워크 스택(L4: TCP, L3: IP, L2: Device Driver, 벤더별로 NIC 카드 드라이버 제작)</li>
 <li>스토리지 스택(VFS/FS/Block layer)
 <ul>
-<li>VFS = Virtual File System
-거의 Core파트라고 볼 수 있음. 리눅스는 모든걸 파일로 보고 read,write,open을 통해 제어하게 되는데
-이런걸 가능하게 하기 위해 Virtual File System이 존재한다.</li>
-<li>FS = File System
-논리적으로 파일들을 어떻게 관리할건지, 디스크 안에 어떻게 물리적으로 어떻게 블록들을 관리할건지 등의
-전략이 File System layer에 있다.</li>
-<li>Block Layer
-SSD, HDD를 실질적으로 block 단위로 read,write 할 수 있게 처리해주는 layer</li>
-<li>Device Driver
-Block device, GPU, 등 다양한 것들이 device driver로 구현되어 들어있음. 결국은 하드웨어를 제어하기 위한 부분.
+<li>
+<p>VFS = Virtual File System</p>
+<p>거의 Core파트라고 볼 수 있음. 리눅스는 모든걸 파일로 보고 read,write,open을 통해 제어하게 되는데
+이런걸 가능하게 하기 위해 Virtual File System이 존재한다.</p>
+</li>
+<li>
+<p>FS = File System</p>
+<p>논리적으로 파일들을 어떻게 관리할건지, 디스크 안에 어떻게 물리적으로 어떻게 블록들을 관리할건지 등의
+전략이 File System layer에 있다.</p>
+</li>
+<li>
+<p>Block Layer</p>
+<p>SSD, HDD를 실질적으로 block 단위로 read,write 할 수 있게 처리해주는 layer</p>
+</li>
+<li>
+<p>Device Driver</p>
+<p>Block device, GPU, 등 다양한 것들이 device driver로 구현되어 들어있음. 결국은 하드웨어를 제어하기 위한 부분.
 하드웨어 벤더들은 리눅스 커널 메인라인에 디바이스 드라이버 코드가 들어가는게 되게 중요함.
-내가 만든 디바이스 드라이버 코드를 넣어야하는데 진입이 빡셈</li>
+내가 만든 디바이스 드라이버 코드를 넣어야하는데 진입이 빡셈</p>
+</li>
 </ul>
 </li>
 </ul>
