@@ -41,7 +41,7 @@ IRQ에 들어있다.</p>
 <p><strong>Exception</strong>이란?</p>
 <p>프로그램 자체가 잘못 만들어진 정말로 극히 만나기 힘든 예외적인 케이스들을 Exception이라고 표현한다.</p>
 <p>시스템콜, 페이지 폴트 등이 이러한 Exception에 해당한다.</p>
-<p>Page Fault란?
+<p><strong>Page Fault</strong>란?
 물리적으로 메모리를 Page라는 단위로 관리하는데, 물리 메모리가 부재되어있다 라고 해서 page fault 라는
 exception이 발생할 수 있다.</p>
 <p>메모리를 management할때 가상메모리 메커니즘으로 관리하는데, 가상메모리를 썼는데 그 가상메모리가
