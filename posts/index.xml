@@ -16,7 +16,7 @@
 			
 			<guid>https://augustkang.com/posts/linux/os-role/</guid>
 			<description>리얼 리눅스 - 리눅스 SW 기본 강의를 듣고 정리하는 OS의 역할 OS가 하는 역할의 정수 2가지 역할을 한다. 어플리케이션 관리 하드웨어 자원 관리 Core 부분 PM(Process Management) MM(Memory Management) IRQ(Interrupt ReQuest)</description>
-			<content type="html"><![CDATA[<p><a href="https://reallinux.co.kr/">리얼 리눅스 - 리눅스 SW 기본 강의</a>를 듣고 정리하는 OS의 역할</p>
+			<content type="html"><![CDATA[<p><a href="https://reallinux.co.kr/sw.html">리얼 리눅스 - 리눅스 SW 기본 강의</a>를 듣고 정리하는 OS의 역할</p>
 <h2 id="os가-하는-역할의-정수">OS가 하는 역할의 정수</h2>
 <p>2가지 역할을 한다.</p>
 <ol>
