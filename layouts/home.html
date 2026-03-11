@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{- $posts := site.GetPage "/posts" -}}
+  {{- $pages := slice -}}
+  {{- if $posts -}}
+    {{- $pages = $posts.RegularPagesRecursive.ByDate.Reverse -}}
+  {{- end -}}
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+        {{ partial "blog-post-list.html" (dict "context" . "pages" $pages) }}
+      </main>
+    </article>
+    <div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div>
+  </div>
+{{ end }}

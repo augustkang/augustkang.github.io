@@ -1,0 +1,93 @@
+name: Deploy Hugo site
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: 0.156.0
+  HUGO_ENVIRONMENT: production
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.5"
+
+      - name: Install Hugo
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "$RUNNER_TEMP/hugo.deb"
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ runner.temp }}/hugo-cache
+            ~/go/pkg/mod
+            resources/_gen
+          key: ${{ runner.os }}-hugo-${{ env.HUGO_VERSION }}-${{ hashFiles('hugo.yaml', 'go.mod', 'go.sum', 'content/**', 'layouts/**', 'assets/**', 'static/**', 'data/**', 'i18n/**') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-${{ env.HUGO_VERSION }}-
+
+      - name: Build site
+        if: github.event_name == 'pull_request'
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo-cache
+          HUGO_DESTINATION: ${{ runner.temp }}/hugo-public
+          HUGO_ENV: production
+        run: hugo --gc --minify --cleanDestinationDir --destination "$HUGO_DESTINATION"
+
+      - name: Build site for Pages
+        if: github.event_name != 'pull_request'
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo-cache
+          HUGO_DESTINATION: ${{ runner.temp }}/hugo-public
+          HUGO_ENV: production
+        run: hugo --gc --minify --cleanDestinationDir --destination "$HUGO_DESTINATION" --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/hugo-public
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
