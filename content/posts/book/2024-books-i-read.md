@@ -18,4 +18,4 @@ draft: false
 * [프로페셔널의 조건(피터 드러커)](https://www.yes24.com/Product/Goods/98051213)
 * [두 사람의 인터내셔널(김기태)](https://www.yes24.com/Product/Goods/136617242)
 * [허송세월(김훈)](https://www.yes24.com/Product/Goods/126845471)
-* [사이트 신뢰성 엔지니어링](https://www.yes24.com/Product/Goods/57979286)
+* [사이트 신뢰성 엔지니어링(벳시 바이어 외)](https://www.yes24.com/Product/Goods/57979286)
